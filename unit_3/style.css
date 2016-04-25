@@ -1,0 +1,26 @@
+body {
+	color: black;
+	background-color: white;
+	font-family: helvetica;
+	font-size: 18pt;
+	font-weight: bold;
+	text-align: center;
+	padding: 6pt;
+}
+
+h1 {
+	font-family: helvetica;
+	color: black;
+	font-size: 3pt;
+	font-weight: lighter;
+	text-align: center;
+}
+
+h2  {
+	font-family: helvetica;
+	color: black;
+	font-size: 3pt;
+	font-weight: lighter;
+	text-align: center;
+	text-transform: uppercase;
+}
