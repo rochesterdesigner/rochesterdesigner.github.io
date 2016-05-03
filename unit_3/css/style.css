@@ -24,13 +24,7 @@ h1 {
 	text-align: center;
 }
 
-body: {
-	text-align: center;
-	margin-left: 3em;
-	margin-right: 3em;
-}
-
-h2, h3  {
+h2,  {
 	font-family: helvetica;
 	font-size: 16px;
 	font-weight: lighter;
@@ -54,4 +48,12 @@ a{
 	letter-spacing: 1px;
 	text-transform: uppercase;
 	text-align: center;
+}
+h3, form{
+	font-family: helvetica;
+	font-size: 24px;
+	font-weight: lighter;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	text-align: left;
 }
