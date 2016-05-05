@@ -1,0 +1,122 @@
+html { 
+  background: url(images/bg.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 30px;
+    font-family: Arial, sans-serif;
+    background-color: #D3D3D3;
+}
+
+nav {
+    background-color: #333;
+    border: 1px solid #333;
+    color: #fff;
+    display: block;
+    margin: 100;
+    overflow: hidden;
+
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+}
+nav ul li {
+    margin: 0;
+    display: inline-block;
+    list-style-type: none;
+    transition: all 0.2s;
+
+}
+
+nav > ul > li > a {
+    color: #aaa;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+nav li > ul{
+    display : none;
+    margin-top:1px;
+    background-color: #bbb;
+
+}
+
+nav li > ul li{
+    display: block;
+}
+
+nav  li > ul li a {
+    color: #111;
+    display: block;
+    line-height: 2em;
+    padding: 0.5em 2em;
+    text-decoration: none;
+}
+
+nav li:hover {
+    background-color: #666;
+
+}
+nav li:hover > ul{
+    position:absolute;
+    display : block;
+
+}
+nav li > ul > li ul  {
+    display: none;
+    background-color: #888;
+
+}
+nav li > ul > li:hover > ul  {
+    position:absolute;
+    display : block;
+
+}
+
+nav ul > li.sub{
+    background: url(ic_keyboard_arrow_down_white_18dp.png) right center no-repeat;
+}
+
+nav ul > li.sub li.sub{
+    background: url(ic_keyboard_arrow_right_white_18dp.png) right center no-repeat;
+}
+
+
+.sidebar {
+	float: left;
+  	width: 800px;
+  	margin-right: -1000px;
+  	padding-top: 50px;
+}
+
+h1{
+	font-size: 48pt;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2{
+	font-size: 12pt;
+	font-weight: lighter;
+	text-align: center;
+}
+
+p{
+	font-family: serif;
+	font-size: 24pt;
+	font-weight: lighter;
+	margin-left: 2em;
+	margin-right: 2em;
+	text-align: justify; 
+}
