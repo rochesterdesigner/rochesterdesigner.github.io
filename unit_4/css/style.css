@@ -92,14 +92,6 @@ nav ul > li.sub li.sub{
     background: url(ic_keyboard_arrow_right_white_18dp.png) right center no-repeat;
 }
 
-
-.sidebar {
-	float: left;
-  	width: 800px;
-  	margin-right: -1000px;
-  	padding-top: 50px;
-}
-
 h1{
 	font-size: 48pt;
 	font-weight: bold;
