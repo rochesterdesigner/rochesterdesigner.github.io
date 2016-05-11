@@ -63,27 +63,32 @@ h2 {
 }
 
 
+#one {
+    background-color: #f6f3f3;
+    padding: 50px 150px 50px 50px;
+}
+
 article {
-  float: left;
-  font-family: times;
-  font-size: 2em;
-  line-height: 1.2em;
-  padding: 50px 75px 75px 75px;
-  width: 66%;
-  line-height: 1.2em;
+    float: left;
+    font-family: times;
+    font-size: 2em;
+    line-height: 1.2em;
+    padding: 50px 150px 50px 75px;
+    width: 66%;
+    line-height: 1.2em;
 
 }
 
-aside {
+aside picture {
     float: right;
     margin: 0 1.5%;
-    width: 31%;
+    width: 33%;
     padding: 0px 100px 20px 0px;
     font-family: times;
 }
 
 aside img {
-    width: 300px;
+    width: 400px;
 }
 
 
