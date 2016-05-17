@@ -1,51 +1,23 @@
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
- }
+/* Table of contents
+––––––––––––––––––––––––––––––––––––––––––––––––––
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
+/* General Content
+–––––––––––––––––––––––––––––––––––––––––––––– */
+.main{padding-top:3%;}
+.row{padding: 2% 0;}
+.white{background-color: #000;}
+
+/* Typography
+–––––––––––––––––––––––––––––––––––––––––––––– */
 body {
-    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-
-#nav {
-margin: 0;
-padding: 0;
-}
-
-#nav li {
-    color: #696969;
-    display: inline;
-    font-size: 2em;
-    float: right;
-    margin-top: 50px;
-    padding: 15px;
-}
-#nav a {
-    color: #696969;
-    list-style-type: none;
-    text-decoration: none;
-    padding: 30px 50px 20px 0px;
-}
-
-footer a {
-    font-size: 1em;
-    color: #ccc;
-    padding: 20px;
-    text-decoration: none;
-}
-
-header {
-    margin-top: 10px;
-    float: left;
-    display: inline-block;
-}
-
-h1 {
-    font-size: 4em;
-    color: #F6546A;
-    padding: 20px 0px 10px 50px;
+        font-family: 'Abel', sans-serif;
 }
 
 h2 {
@@ -53,14 +25,74 @@ h2 {
     font-weight: lighter;
     color: #696969;
     line-height: 1em;
-    padding: 0px 0px 0px 50px;
+    padding: 0px 0px 0px 20px;
 }
 
+p.bio {
+    color:000;
+    font-size: 2em;
+    color: #696969;
+}
+
+
+/* Header & Navigation
+–––––––––––––––––––––––––––––––––––––––––––––– */
+header {
+    background color: #dddddd;
+    margin-top: 10px;
+    float: left;
+    display: inline-block;
+}
+
+#nav a{
+    color: #696969;
+    background-color: #fff;
+    display: inline;
+    font-size: 2em;
+    float: right;
+    margin-top: 50px;
+    padding: 15px;
+}
+#nav a {
+    font-family: 'Abel', sans-serif;
+    font-size: 2em;
+    font-weight: lighter;color: #696969;
+    list-style-type: none;
+    text-decoration: none;
+    background color: #fff;
+    display: inline;
+    padding: 15px;
+
+
+/* Images & Media
+–––––––––––––––––––––––––––––––––––––––––––––– */
 #img {
-    width: 2400px;
+    max-width: 100%;
     margin-left: 0 auto;
     margin-right: 0 auto;
 }
+img.avatar{
+    border-radius: 400px;
+    border: 5px solid white #fff;
+}
+img:hover{opacity: 0.8;}
+
+/* Footer
+–––––––––––––––––––––––––––––––––––––––––––––– */
+footer a {
+    font-size: 1em;
+    color: #ccc;
+    padding: 20px;
+    text-decoration: none;
+
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––– */
+
+
+
+
+
+
 
 
 #one {
