@@ -1,0 +1,249 @@
+/*  body:----------------*/
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic);
+
+/* CSS reset rule */
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+ 
+/* CSS color guide
+#000 black
+#555 gray
+#696969 dark gray
+#ccc light gray
+ #f7f7f7 lightest gray
+ */
+
+
+
+/* body */
+
+body { 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 18px; 
+    font-weight: 300;
+    font color: #555;
+    margin: 0;
+    padding: 0;
+}
+
+#page {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+h1 {
+    font-weight: 700;
+    font-size: 5em; 
+    text-align: left;
+    color: #000;
+    text-transform: uppercase;
+    line-height: .9em;
+    margin: 0;
+    padding: 0 0 0 2%;
+}
+
+h2 {
+    color: #696969;
+    margin: 0;
+    padding: 0% 0 0 2%;
+    font-size: 2.5em;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: inline;
+}
+
+h3 {
+    color: #ccc;
+    font-weight: 700;
+    font-size: 5em; 
+    text-align: left;
+    text-transform: uppercase;
+    display: inline;
+    padding: 0% 0 0 2%;
+    margin-top: 10%;
+}
+
+p { font-size: 1.3em; color: #555; line-height: 1.5em }
+
+a { color: #696969; text-decoration: none }
+
+/* Header */
+
+header img .logo {
+    z-index: 1;
+    display: block;
+    position: relative;
+    float: left;
+    margin: 2% 0 0 2%;
+}
+
+/* Section - All */
+
+section::after {
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+/* Section - Main */
+section.main {
+    position: relative;
+    background-color: #f7f7f7;
+    position: relative;
+    margin: 0; 
+    padding: 0;
+}
+
+section.main article {
+    width: 25%;
+    padding: 2%;
+    float: left;
+}
+
+.container {
+    width: 65%;
+    height: auto;
+    padding: 0 2% 0 0;
+    float: right;
+}
+
+.container img {
+    width: 100%;
+    display: block;
+}
+
+
+/* Section - Design */
+section.design {
+    position: relative;
+    margin: 2%; 
+    padding: 0;
+}
+
+.imggallery {
+    position: relative;
+    width: 100%;
+}
+
+
+/*  Navigation */
+
+nav {
+    background-color: #000;
+    color: #696969;
+    position: relative;
+    top: 50px;
+    padding: 2% 0 2% 0;
+    float: right;
+    width: 75%;
+}
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav ul { list-style: none; margin: 0; padding: 0px; }
+
+nav ul li a:hover { background-color: #eee; }
+
+nav ul li:hover > ul { display: block; }
+
+nav ul li a {
+    display: inline-block;
+    color: #696969;
+    padding: 10px 40px;
+    text-decoration: none;
+    width: 125px;
+    position: relative;
+}
+
+nav ul li a:visited {
+    color: #fff; }
+
+nav ul ul { 
+    position: absolute;
+    top: 100%;
+    background-color: #696969;
+    display: none; 
+ }
+
+nav ul ul li { position: relative; }
+
+nav ul ul ul {left: 100%; top: 0px; }
+
+
+
+/* top level */
+
+nav > ul {padding-left: 200px; }
+nav > ul > li {float: right;}
+nav > ul > li a {width: auto; padding: 10px 20px 15px 20px; }
+
+nav a[aria-haspopup="true"]::after {
+    content: '';
+    display: block; width: 0px; height: 0px;
+    position: absolute;
+    top: 16px; right: 15px;
+    border-top: 4px solid transparent;
+    border-bottom: 4px solid transparent;
+    border-left: 4px solid #fff;
+}
+
+nav > ul > li > a[aria-haspopup="true"]::after {
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    border-top: 4px solid #fff;
+    left: 0px; right: auto;
+
+}
+
+
+
+ 
+/* Footer */
+
+footer {
+    font-size: .8em;
+    background-color: #000;
+    margin: 0px;
+    padding: 20px;
+    color: #fff;
+    }
+
+footer .content {
+    display: inline;
+    }
+
+footer p {
+    float: right;
+}
+
+footer a {
+    margin-left: 2%;
+    color: #fff;
+}
+
+footer a:visited {
+    color: #777;
+}    
+
+footer a:hover {
+    color: #f7f7f7;
+}
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1000 px) {
+   
+    h1, h3 { font-size: 4em; }
+    h2 { font-size: 2.3em; }
+
+
+

@@ -1,0 +1,161 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic);
+
+
+/* CSS reset rule */
+
+* {margin: 0px; padding: 0px; }
+
+
+/*  Table of Contents
+________________________________________________
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+________________________________________________*/
+
+/*  General Content
+________________________________________________*/
+
+header.main_nav {background-color: #000; height: 120px; margin-bottom: 2%;}
+nav::after {content: ''; display: block; clear: both;}
+
+.main {padding-top: 3%; border: 1px solid #000;}
+.row {padding: 2% 0;}
+
+
+/*  Typography
+________________________________________________*/
+body{ 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.5em; 
+    line-height: 1.5em
+    font-weight: 300;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 700;
+    font-size: 3em; 
+    text-transform: uppercase;
+    line-height: .2em;
+    padding: 18% 0 0 8%;
+}
+
+h3 {
+    font-weight: 300;
+    font-size: 1.2em; 
+}
+
+
+div.about {background color: #f2eeee;}
+
+h2.bio {color:#555;}
+p.bio {color: #696969; padding: 0 2% 0 8%; margin-bottom: 3%;}
+
+
+
+/* Header & Navigation
+________________________________________________*/
+
+nav {
+    position: relative;
+    top: 5%;
+    padding: 2% 0 2% 0;
+    float: right;
+    width: 75%;
+}
+
+nav::after {content: ''; display: block; clear: both;}
+
+nav ul {color: #696969; list-style: none; margin: 0; padding: 0px;}
+nav ul li a:hover {color: 000; background-color: #eee; }
+nav ul li:hover > ul {display: block; color: #f2eeee;}
+
+nav ul li a {
+    display: inline-block;
+    color: #696969;
+    padding: 10px 60px;
+    text-decoration: none;
+    width: 145px;
+    position: relative;
+}
+
+nav ul li a:visited {color: #fff;}
+nav ul ul {position: absolute; top: 100%; background-color: #000; display: none;}
+nav ul ul li {position: relative}
+nav ul ul ul {left: 100%; top: 0px;}
+
+/* top level */
+nav > ul > li {color: #696969; float: right;}
+nav > ul > li a {width: auto; padding: 30px 30px 0 20px;}
+
+
+/*  Images & Media
+________________________________________________*/
+img {max-width: 100%}
+img.avatar {border-radius: 400px; border: 6px solid #fff; margin: 3% 0; padding: 3%;}
+img:hover {opacity: 0.8;}
+
+
+/*  Footer
+________________________________________________*/
+ul.social{
+    display: block;
+    margin: 5% 0;
+    list-style-type: none;
+    text-align: center;
+}
+ul.social li{
+    font-size: 2.5em;
+    display: inline;
+    padding: 0 2%;
+}
+ul.social li a{
+    color: #ccc;
+}
+ul.social li.facebook a:hover{color: rgb(59,89,152);}
+ul.social li.twitter a:hover{color: rgb(0,172,237);}
+ul.social li.instagram a:hover{color: rgb(233,89,80);}
+ul.social li.flickr a:hover{color: rgb(255,0, 132);}
+ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
+
+footer {
+    font-size: 1.2em;
+    background-color: #000;
+    margin: 0px; padding: 0 0 30 0px;
+    color: #f2eeee;
+    }
+
+footer a {color: #f2eeee; padding: 30px; text-decoration: none; display: inline;} 
+footer a:hover {color: #ccc;}
+
+h3.copyright{text-align: center; display: inline;}
+footer p {float: right;}
+
+
+
+/*  Media Quieries
+________________________________________________*/
+
+@media only screen and (max-width: 565px;){
+    h2.bio{font-size: 2.3em; line-height: 2.3em; padding: 0 0 10% 0;}
+    ul.social li a {font-size: .50em;}
+    nav {float: none;}
+    nav a { margin: 0 1.6em .75em 0;}
+    img { width: 320px; }
+    nav { float: none; }
+    footer p {float: none;}
+}
+
+
+
+
+
+
+
+
+
+
