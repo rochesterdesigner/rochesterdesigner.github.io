@@ -56,7 +56,7 @@ h3 {
     text-align: left;
 }
 
-h2.bio {font-size: 3.5em; color: #555; margin: 0; padding: 3% 0 0 0; position: relative;}
+h2.bio {font-size: 3.5em; color: #555; margin: 0; padding: 0; position: relative;}
 p.bio {margin: 0; padding: 0; position: relative;}
 
 /* Header & Navigation
@@ -167,7 +167,8 @@ ________________________________________________*/
     .main {padding-top: 3%;}
     .portfolio img {margin-bottom: 5%;}
     img.avatar{width: 70%; margin: 5% 10%;}
-    h2, h3 {display: none;}
+    h2 {font-size: 1.2em;}
+    h3 {display: none;}
     p.bio{font-size: 1em;}
 }
 
