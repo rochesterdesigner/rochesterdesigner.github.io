@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,700,700italic);
+
+
+/* CSS reset rule */
+* {margin: 0px; padding: 0px; }
+
+
+/*  Table of Contents
+________________________________________________
+- General Content
+- Typography
+- Header & Navigation
+- Images & Media
+- Footer
+- Media Queries
+________________________________________________*/
+
+
+/*  General Content
+________________________________________________*/
+
+.main {background-color: #fff; width: 100%; margin: 0;}
+.row {padding: 2% 0;}
+.black {background-color: #000;}
+.about {background: #eee;}
+
+/*  Typography
+________________________________________________*/
+
+body{ 
+    font-family: 'Open Sans', sans-serif; 
+    font-size: 1.5em; 
+    line-height: 1.5em
+    font-weight: 300;
+    margin: 0;
+}
+
+h2 {
+    color: #fff;
+    font-weight: 700;
+    font-size: 2em; 
+    padding: 0;
+    line-height: 1em;
+    text-transform: uppercase;
+    display: inline;
+}
+
+h3 {
+    color: #bbb;
+    font-weight: 700;
+    font-size: .7em; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+h2.bio {font-size: 3.5em; color: #555; margin: 0; padding: 0; position: relative;}
+p.bio {margin: 0; padding: 0; position: relative;}
+
+/* Header & Navigation
+________________________________________________*/
+header.main_nav {display: block;}
+
+.s_logo {width: 6%; padding: 0; position: absolute;}
+.header_info {font-size: .9em; color: #fff; text-align: left; margin: 0; padding: 3% 0 0 8%; position: absolute;}
+.header_info a {text-decoration: none; color: #fff;}
+.header_info a:hover {color: #bbb;}
+
+.logo {
+    display: inline;
+    text-align: left;
+    float: left;
+    margin: 0;
+    padding: 0;
+    position: relative;}
+
+ul.social {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+ul.social li {font-size: 1.8em; display: inline; padding: 0; text-align: center; float: right;}
+
+ul.social li a {color: #fff; display: block; width: 50px;}
+
+ul.social li.facebook a:hover{color: rgb(59,89,152);}
+ul.social li.twitter a:hover{color: rgb(0,172,237);}
+ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
+ul.social li.instagram a:hover{color: rgb(233,89,80);}
+ul.social li.pinterest a:hover {color: rgb(203,32,39);}
+
+.main_nav ul {list-style-type: none; margin: 0; padding: 0; width: 100%; float: right;}
+.main_nav li a {font-weight: 700; color: #ccc; text-align: center; display: block; width: 100px; padding: 2%; text-decoration: none;}
+.main_nav a:hover {color: #000; background-color: #eee;}
+.main_nav:active  {color: #696969; text-decoration: underline}
+
+/* top level */
+nav > ul > li {color: #ccc; float: right;}
+nav > ul > li a {width: auto; padding: 0;}
+ul.social {width: auto; float: right; margin-bottom: 3%;}
+
+ul::after {content: ''; display: block; clear: both;}
+
+
+/*  Images & Media
+________________________________________________*/
+
+img.avatar {width: 70%; border-radius: 400px; border: 6px solid #fff; margin: 0; padding: 0;}
+img {max-width: 100%; height: auto; margin: 0; padding: 0;}
+img:hover {opacity: 0.8;}
+
+
+/*  Footer
+________________________________________________*/
+
+footer p {
+    color: #ccc;
+    text-decoration: none;
+    display: inline;
+    padding: 0;
+    margin: 0;
+}
+
+span {padding: 10px;}
+ 
+
+
+/*  Media Quieries
+________________________________________________*/
+
+/* mobile styles go here */
+@media only screen and (max-width: 500px){
+    .s_logo {width: 12%; padding: 0; position: absolute;}
+    .header_info {display: none;}
+    
+    ul.social li {font-size: 1em; margin: 90px 0 0 0; padding: 0px; text-align: center; float: right;}
+    ul.social li a {color: #fff; display: block; width: 50px;}
+    
+    .logo {display: inline; text-align: left; line-height: .8em; margin: -145px 0 0 67px; float: left; position: absolute;}
+ 
+    .main_nav ul {list-style-type: none; margin: 0; padding: 15px; width: 100%; float: none;}
+    .main_nav li a {font-size: 1.5em; display: block; width: 90%; border: 2px sold: #fff; padding: 4%; text-decoration: none;}
+    .main_nav a:hover {transition-property:  0;}
+    /* top level */
+    nav > ul > li {color: #ccc; float: none;}
+    nav > ul > li a {width: auto; padding: 0;}
+    .main {padding-top:15%;}
+    .portfolio img{margin-bottom: 10%;}
+    img.avatar{width: 70%; margin: 5% 10%;}
+    h2.bio{font-size: 2.3em;}
+    p.bio{font-size: 1em;}
+}
+
+
+/* tablet styles go here */
+@media only screen and (min-width: 501px) and (max-width: 768px) {
+    .header_info {font-size: .9em; padding: 4% 0 0 8%;}
+    ul.social li {font-size: 1.4em;}
+    ul.social li a {width: 40px;}
+    .logo {font-size: .9em; text-height: .8em; margin: 30px 0 0 0px; float: left; position: absolute;}
+    
+    ul.navigation li a {width: 100%; margin: 0; padding: 0 10px; font-size: .9em;float: right; position: relative;}
+    .main {padding-top: 3%;}
+    .portfolio img {margin-bottom: 5%;}
+    img.avatar{width: 70%; margin: 5% 10%;}
+    h2, h3 {display: none;}
+    p.bio{font-size: 1em;}
+}
+
+
+/* desktop styles go here */
+@media only screen and (min-width: 769px) and (max-width: 920px) {
+
+    .s_logo {width: 6%; padding: 0; position: absolute;}
+    .header_info {font-size: .9em; color: #fff; text-align: left; margin: 0; padding: 4% 0 0 9%; position: absolute;}
+    h2.logo {font size: 1.5em; margin top: 100px;}
+    ul.social li {font-size: 1.3em; display: inline; margin: 10px 0 0 0; padding: 0; text-align: center; float: right;}
+    .main_nav li a {width: 70px; padding: 0; text-decoration: none;}
+}
+
+
+@media only screen and (min-width: 921px) {
+
+}
+
+
+
+
+

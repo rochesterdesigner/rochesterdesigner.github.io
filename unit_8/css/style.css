@@ -8,23 +8,13 @@
 
 /*  Table of Contents
 ________________________________________________
-- General Content
 - Typography
+- General Content
 - Header & Navigation
 - Images & Media
 - Footer
 - Media Queries
 ________________________________________________*/
-
-/*  General Content
-________________________________________________*/
-
-header.main_nav {background-color: #000; height: 120px; margin-bottom: 2%;}
-nav::after {content: ''; display: block; clear: both;}
-
-.main {padding-top: 3%; border: 1px solid #000;}
-.row {padding: 2% 0;}
-
 
 /*  Typography
 ________________________________________________*/
@@ -54,6 +44,43 @@ div.about {background color: #f2eeee;}
 
 h2.bio {color:#555;}
 p.bio {color: #696969; padding: 0 2% 0 8%; margin-bottom: 3%;}
+
+
+/*  General Content
+________________________________________________*/
+
+#wrapper {max-width: 1080px;}
+
+.header_info {
+    color: #bbb;
+    text-align: left; 
+    padding: 2%;
+    float: left;
+}
+
+.header_info a {text-decoration: none; color: #bbb;}
+
+ul.social{
+    display: block;
+    margin: 2% 0;
+    list-style-type: none;
+    float: right;
+}
+
+ul.social li {font-size: .5em; display: inline; padding: 0 30px;}
+
+ul.social li a {color: #fff;}
+
+ul.social li.facebook a:hover{color: rgb(59,89,152);}
+ul.social li.twitter a:hover{color: rgb(0,172,237);}
+ul.social li.linkedin a:hover{color: rgb(0, 123,182);}
+ul.social li.instagram a:hover{color: rgb(233,89,80);}
+ul.social li.pinterest a:hover{color: rgb(203,32,39);}
+
+
+nav::after {content: ''; display: block; clear: both;}
+
+
 
 
 
